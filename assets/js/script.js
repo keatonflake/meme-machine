@@ -1,8 +1,9 @@
 const memeboxEl = document.querySelector('#memebox')
 const memeimgEl = document.querySelector('#memeimg')
 
-// first API fetch function
+const copyLinkEl = document.getElementById('#copyWebsightLink')
 
+// first API fetch function
 function memeanator(){
     var api_url = 'https://meme-api.herokuapp.com/gimme/wholesomememes/10'
     
@@ -14,3 +15,15 @@ function memeanator(){
         })
     }
 memeanator()
+
+// copy websight link btn
+copyLinkEl.addEventListener('click', copyWebsightLinkToClipBoard() )
+
+function copyWebsightLinkToClipBoard(event) {
+    var copyLink = www.test.com;
+    copyLink.select();
+    copyLink.setSelectionRange(0, 99999); /* For mobile devices */
+  
+     /* Copy the Link inside the Link field */
+    navigator.clipboard.writeText(copyLink.value);
+}
