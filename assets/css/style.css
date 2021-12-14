@@ -2,11 +2,9 @@ body{
     background-color: rgb(160, 179, 182);
     display: flex;
 }
-
 img{
 width: 500px;
 }
-
 header {
     background-image: url("https://img2.goodfon.com/wallpaper/nbig/7/9a/doge-dog-texture-sobaka.jpg");
     display: flex;

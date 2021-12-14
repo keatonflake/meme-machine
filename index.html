@@ -12,11 +12,11 @@
 <header>
     <div class="nav">
       <ul class= "btn">
-          <li><a href="">WHOLESOME</a></li>
+          <li id="wholesome-btn"><a href="">WHOLESOME</a></li>
 
-          <li><a href="">DANK</a></li>
+          <li id="dank-btn"><a href="">DANK</a></li>
           
-          <li><a href="">MIXED</a></li>
+          <li id="mixed-btn"><a href="">MIXED</a></li>
       </ul>
     </div>
 </header>
@@ -35,7 +35,18 @@
         </div>
     </div>
 
-    <div class="meme memeDank hide" id="memebox">
+    <div class="meme allMeme hide" id="memebox">
+      <div>
+          <img id="memeWholesomeimg">
+          <div class="btn">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+            <button id="copyWebsightLink"> Copy Websight Link</button>
+          </div>
+      </div>
+  </div>
+
+    <div class="meme memeDank" id="memebox">
       <div>
           <img id="memeDankimg">
           <div class="btn">
@@ -46,7 +57,7 @@
       </div>
   </div>
 
-  <div class="meme allMeme" id="memebox">
+  <div class="meme allMeme hide" id="memebox">
     <div>
         <img id="allMemeimg">
         <div class="btn">
@@ -57,12 +68,6 @@
     </div>
 </div>
     
-    <!-- like buttons -->
-  <!-- <div class="btn">
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
-    <button id="copyWebsightLink"> Copy Websight Link</button>
-  </div> -->
     <script src= "assets/js/script.js"></script> 
 </body>
 </html>
