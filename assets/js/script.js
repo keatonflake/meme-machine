@@ -1,6 +1,12 @@
-const memeboxEl = document.querySelector('#memebox')
+const WholesomeMemeboxEl = document.querySelector('#WholesomeMemebox')
 
-const memeWholesomeimgEl = document.querySelector('#memeWholesomeimg')
+const memeWholesomeimgEl1 = document.querySelector('#memeWholesomeimg1')
+const memeWholesomeimgEl2 = document.querySelector('#memeWholesomeimg2')
+const memeWholesomeimgEl3 = document.querySelector('#memeWholesomeimg3')
+const memeWholesomeimgEl4 = document.querySelector('#memeWholesomeimg4')
+const memeWholesomeimgEl5 = document.querySelector('#memeWholesomeimg5')
+const memeWholesomeimgEl6 = document.querySelector('#memeWholesomeimg6')
+
 const memeDankimgEl = document.querySelector('#memeDankimg')
 const allMemeimgEl = document.querySelector('#allMemeimg')
 
@@ -17,13 +23,17 @@ const wholsomeMemeanator = function() {
     fetch(api_url).then(
         response => response.json()).then(data => {
             console.log(data);
-            memeWholesomeimgEl.src = data.memes[0].url
-            
+            memeWholesomeimgEl1.src = data.memes[0].url;
+            memeWholesomeimgEl2.src = data.memes[1].url;
+            memeWholesomeimgEl3.src = data.memes[2].url;
+            memeWholesomeimgEl4.src = data.memes[3].url;
+            memeWholesomeimgEl5.src = data.memes[4].url;
+            memeWholesomeimgEl6.src = data.memes[5].url;
         })
     }
 
 const memeDankanator = function() {
-    var api_url = 'https://meme-api.herokuapp.com/gimme/dankmemes/10'
+    var api_url = 'https://meme-api.herokuapp.com/gimme/dankmemes/50'
     
     fetch(api_url).then(
         response => response.json()).then(data => {
@@ -44,23 +54,23 @@ const allMemeanator = function() {
         })
     }
 
-// // refresh Models
-// $document.ready(function() {
-//     $('#div_refresh').load();
-//     setInterval(function() {
-//         $('#div_refresh').load();
-//     },3000);
-// });
+const removeWholesomeClassList = function() {
+    WholesomeMemeboxEl.classList.remove("hide")
+}
+
 
 // display memes btns
 wholesomeBtnEL.addEventListener('click', wholsomeMemeanator())
-dankBtnEL.addEventListener('click', memeDankanator())
-mixedBtnEL.addEventListener('click', allMemeanator())
+wholesomeBtnEL.addEventListener('click', removeWholesomeClassList())
+
+
+dankBtnEL.addEventListener('click', memeDankanator)
+mixedBtnEL.addEventListener('click', allMemeanator)
 
 // copy websight link btn
-copyLinkEl.addEventListener('click', copyWebsightLinkToClipBoard())
+copyLinkEl.addEventListener('click', copyWebsiteLinkToClipBoard())
 
-function copyWebsightLinkToClipBoard(event) {
+function copyWebsiteLinkToClipBoard(event) {
     var copyLink = www.test.com;
     copyLink.select();
     copyLink.setSelectionRange(0, 99999); /* For mobile devices */
