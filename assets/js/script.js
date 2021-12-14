@@ -1,5 +1,7 @@
 const memeboxEl = document.querySelector('#memebox')
 const memeimgEl = document.querySelector('#memeimg')
+const memeDankimgEl = document.querySelector('#memeDankimg')
+const allMemeimgEl = document.querySelector('#allMemeimg')
 
 const copyLinkEl = document.getElementById('#copyWebsightLink')
 
@@ -15,6 +17,30 @@ function memeanator(){
         })
     }
 memeanator()
+
+function memeDankanator(){
+    var api_url = 'https://meme-api.herokuapp.com/gimme/dankmemes/10'
+    
+    fetch(api_url).then(
+        response => response.json()).then(data => {
+            console.log(data);
+            memeDankimgEl.src = data.memes[0].url
+            
+        })
+    }
+memeDankanator()
+
+function allMemeanator(){
+    var api_url = 'https://meme-api.herokuapp.com/gimme/2'
+    
+    fetch(api_url).then(
+        response => response.json()).then(data => {
+            console.log(data);
+            allMemeimgEl.src = data.memes[0].url
+            
+        })
+    }
+allMemeanator()
 
 // copy websight link btn
 copyLinkEl.addEventListener('click', copyWebsightLinkToClipBoard() )

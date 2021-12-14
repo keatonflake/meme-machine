@@ -6,11 +6,15 @@ img{
 width: 500px;
 }
 
-.meme {
+.memeWholesome .memeDank {
     background:rgb(27, 26, 26);
     padding: 25px;
     display: flex;
     color: white;
     align-items: center;
     justify-content: center;
+}
+
+.hide {
+    display: none;
 }
