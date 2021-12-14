@@ -3,9 +3,13 @@ body{
     display: flex;
 }
 img{
-width: 500px;
+width: 800px;
 }
 header {
     background-image: url("https://img2.goodfon.com/wallpaper/nbig/7/9a/doge-dog-texture-sobaka.jpg");
     display: flex;
+}
+
+.hide {
+    display: none;
 }
