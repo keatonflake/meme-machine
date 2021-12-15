@@ -13,7 +13,7 @@ const allMemeimgEl = document.querySelector('#allMemeimg')
 const wholesomeBtnEL = document.querySelector("#wholesome-btn")
 const dankBtnEL = document.querySelector("#dank-btn")
 const mixedBtnEL = document.querySelector("#mixed-btn")
-
+const memesEL =document.querySelector (".memes")
 const copyLinkEl = document.getElementById('#copyWebsightLink')
 
 // first API fetch function
@@ -23,12 +23,18 @@ const wholsomeMemeanator = function() {
     fetch(api_url).then(
         response => response.json()).then(data => {
             console.log(data);
-            memeWholesomeimgEl1.src = data.memes[0].url;
-            memeWholesomeimgEl2.src = data.memes[1].url;
-            memeWholesomeimgEl3.src = data.memes[2].url;
-            memeWholesomeimgEl4.src = data.memes[3].url;
-            memeWholesomeimgEl5.src = data.memes[4].url;
-            memeWholesomeimgEl6.src = data.memes[5].url;
+            // memeWholesomeimgEl1.src = data.memes[0].url;
+            // memeWholesomeimgEl2.src = data.memes[1].url;
+            // memeWholesomeimgEl3.src = data.memes[2].url;
+            // memeWholesomeimgEl4.src = data.memes[3].url;
+            // memeWholesomeimgEl5.src = data.memes[4].url;
+            // memeWholesomeimgEl6.src = data.memes[5].url;
+
+            data.memes.forEach(function(meme) {
+                let image = document.createElement("img")
+                image.setAttribute("src", meme.url)
+                memesEL.appendChild(image)
+            }) 
         })
     }
 
