@@ -6,9 +6,12 @@ const allMemeimgEl = document.querySelector('#allMemeimg')
 const wholesomeBtnEL = document.querySelector("#wholesome-btn")
 const dankBtnEL = document.querySelector("#dank-btn")
 const mixedBtnEL = document.querySelector("#mixed-btn")
+
 const memesEL = document.querySelector (".memes")
 const dankMemesEL = document.querySelector (".dankMemes")
 const allMemesEL = document.querySelector (".allMemes")
+
+const memesEL =document.querySelector (".memes")
 
 const copyLinkEl = document.getElementById('#copyWebsightLink')
 
