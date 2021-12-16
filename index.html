@@ -9,70 +9,83 @@
     <title>Meme Machine</title>
 </head>
 
+<body>
 <header>
     <div class="nav">
-      <ul class= "btn">
-          <li id="wholesome-btn"><a href="">WHOLESOME</a></li>
+      <div class="btn">
+        <input class="memeFilter" type="button" onclick="wholsomeMemeanator(), WholesomeremoveClassList(), DankaddClassList(), AlladdClassList()" value="Wholesome">
+      </div>
 
-          <li id="dank-btn"><a href="">DANK</a></li>
-          
-          <li id="mixed-btn"><a href="">MIXED</a></li>
-      </ul>
+      <div class="btn">
+        <input class="memeFilter" type="button" onclick="memeDankanator(), DankremoveClassList(), WholesomeaddClassList(), AlladdClassList()" value="Dank">
+      </div>
+
+      <div class="btn">
+        <input class="memeFilter" type="button" onclick="allMemeanator(), AllremoveClassList(), WholesomeaddClassList(), DankaddClassList()" value="All">
+      </div>
+    </div>
+      <div class="btn">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50"
+          data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+        <button id="copyWebsightLink"> Copy Websight Link</button>
     </div>
 </header>
 
-<body>
-<!-- facebook  like button link -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="zhzqMBbb"></script>
-        
-<!-- meme selection Buttons -->
-
-
-<!-- wholesome meme box -->
-
-            </div>
-        </div>
-    </div>
-
-    <div class="meme hide" id="WholesomeMemebox">
-      <div>
-          <img id="memeWholesomeimg1">
-          <img id="memeWholesomeimg2">
-          <img id="memeWholesomeimg3">
-          <img id="memeWholesomeimg4">
-          <img id="memeWholesomeimg5">
-          <img id="memeWholesomeimg6">
-          <div class="btn">
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
-            <button id="copyWebsightLink"> Copy Websight Link</button>
-          </div>
-      </div>
-  </div>
-
-    <div class="meme memeDank hide" id="memebox">
-      <div>
-          <img id="memeDankimg">
-          <div class="btn">
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
-            <button id="copyWebsightLink"> Copy Websight Link</button>
-          </div>
-      </div>
-  </div>
-
-  <div class="meme allMeme hide" id="memebox">
+  <div class="meme hide" id="WholesomeMemebox">
     <div>
-        <img id="allMemeimg">
-        <div class="btn">
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
-          <button id="copyWebsightLink"> Copy Websight Link</button>
-        </div>
+      <div class="memes">
+
+        <img>
+
+      </div>
+      <div class="btn">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50"
+          data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+        <button id="copyWebsightLink"> Copy Websight Link</button>
+      </div>
     </div>
-</div>
-    
-    <script src= "assets/js/script.js"></script> 
+  </div>
+
+  <div class="meme memeDank hide" id="Dankmemebox">
+    <div class="dankMemes">
+
+      <img>
+      
+    </div>
+      <div class="btn">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50"
+          data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+        <button id="copyWebsightLink"> Copy Websight Link</button>
+      </div>
+  </div>
+
+  <div class="meme allMeme hide" id="Allmemebox">
+    <div class="allMemes">
+
+      <img>
+      
+    </div>
+      <img id="allMemeimg">
+      <div class="btn">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="50"
+          data-layout="button" data-action="like" data-size="large" data-share="true"></div>
+        <button id="copyWebsightLink"> Copy Websight Link</button>
+      </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
