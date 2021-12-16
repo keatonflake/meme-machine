@@ -1,11 +1,24 @@
 body{
     background-color: rgb(160, 179, 182);
-    display: flex;
+    /* display: flex; */
 }
 img{
-width: 500px;
+max-width: 300px;
+margin: 10px;
 }
 header {
     background-image: url("https://img2.goodfon.com/wallpaper/nbig/7/9a/doge-dog-texture-sobaka.jpg");
     display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.hide {
+    display: none;
+}
+.memes {
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
