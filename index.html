@@ -15,24 +15,17 @@
 
   <header>
     <div class="nav">
-      <div class="btn">
+      <div class="Filterbtn">
         <input class="memeFilter" type="button" onclick="wholsomeMemeanator(), WholesomeremoveClassList(), DankaddClassList(), AlladdClassList()" value="Wholesome">
       </div>
 
-      <div class="btn">
+      <div class="Filterbtn">
         <input class="memeFilter" type="button" onclick="memeDankanator(), DankremoveClassList(), WholesomeaddClassList(), AlladdClassList()" value="Dank">
       </div>
 
-      <div class="btn">
+      <div class="Filterbtn">
         <input class="memeFilter" type="button" onclick="allMemeanator(), AllremoveClassList(), WholesomeaddClassList(), DankaddClassList()" value="Shuffle">
       </div>
-    </div>
-      <div class="btn">
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-          data-show-count="false">Tweet</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <!-- <button id="copyWebsightLink"> Copy Websight Link</button> -->
-        <div class="fb-share-button" data-href="https://keatonflake.github.io/meme-machine/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkeatonflake.github.io%2Fmeme-machine%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
     </div>
 </header>
 
@@ -47,7 +40,7 @@
   </div>
 
   <!-- Dank Section -->
-  <div class="meme memeDank hide" id="Dankmemebox">
+  <div class="memesContainer memeDank hide" id="Dankmemebox">
     <div class="dankMemes">
 
       <img>
@@ -56,7 +49,7 @@
   </div>
 
   <!-- Suffle All Section -->
-  <div class="meme allMeme hide" id="Allmemebox">
+  <div class="memesContainer meme allMeme hide" id="Allmemebox">
     <div class="allMemes">
 
       <img>
@@ -65,7 +58,14 @@
   </div>
 
   <footer class="footer">
-
+    <p class="footerText">Share Meme Machine</p>
+    <div class="btn">
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!-- <button id="copyWebsightLink"> Copy Websight Link</button> -->
+      <div class="fb-share-button" data-href="https://keatonflake.github.io/meme-machine/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkeatonflake.github.io%2Fmeme-machine%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+  </div>
   </footer>
 
   <script src="assets/js/script.js"></script>

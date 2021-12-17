@@ -15,7 +15,7 @@ const copyLinkEl = document.getElementById('#copyWebsightLink')
 
 // first API fetch function
 function wholsomeMemeanator() {
-    var api_urlWhole = 'https://meme-api.herokuapp.com/gimme/wholesomememes/20'
+    var api_urlWhole = 'https://meme-api.herokuapp.com/gimme/wholesomememes/24'
     
     fetch(api_urlWhole).then(
         response => response.json()).then(data => {
@@ -30,7 +30,7 @@ function wholsomeMemeanator() {
     }
 
 function memeDankanator() {
-    var api_urlDank = 'https://meme-api.herokuapp.com/gimme/dankmemes/20'
+    var api_urlDank = 'https://meme-api.herokuapp.com/gimme/dankmemes/24'
     
     fetch(api_urlDank).then(
         response => response.json()).then(data => {
@@ -45,7 +45,7 @@ function memeDankanator() {
     }
 
 function allMemeanator() {
-    var api_url = 'https://meme-api.herokuapp.com/gimme/20'
+    var api_url = 'https://meme-api.herokuapp.com/gimme/24'
     
     fetch(api_url).then(
         response => response.json()).then(data => {
