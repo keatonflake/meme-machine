@@ -1,41 +1,18 @@
 body{
     background-color: rgb(79, 111, 180);
-    
-    /* display: flex; */
 }
-img{
-max-width: 300px;
-margin: 10px;
-}
+
 header {
     background-image: url("https://img2.goodfon.com/wallpaper/nbig/7/9a/doge-dog-texture-sobaka.jpg");
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 150px;
+    height: 5%;
     align-items: center;
     justify-content: center;
-    position: fixed;
 }
 .nav {
     display: inline-flex;
-}
-
-.hide {
-    display: none;
-}
-.memes {
-    display:flex ;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn {
-    display:flex ;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
 }
 
 .memeFilter {
@@ -45,4 +22,30 @@ header {
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 40px;
+}
+
+
+
+.memesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    justify-content: center;
+    max-width: 20%;
+    max-height: 20%;
+    padding: 1% 1%;
+}
+
+.btn {
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.hide {
+    display: none;
 }
