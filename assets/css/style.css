@@ -1,3 +1,5 @@
+
+
 body{
     background-color: rgb(79, 111, 180);
 }
@@ -11,7 +13,6 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 5%;
-    border-radius: 20px;
     border: white;
 }
 .nav {
@@ -26,8 +27,6 @@ header {
     border-radius: 30px;
     font-size: 40px;
 }
-
-
 
 .memesContainer {
     display: flex;
@@ -58,7 +57,7 @@ img {
     margin-right: 1%;
 }
 
-.footer {
+.theFooter {
     display: flex;
     position: fixed;
     align-items: center;
