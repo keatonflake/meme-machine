@@ -15,7 +15,7 @@ const copyLinkEl = document.getElementById('#copyWebsightLink')
 
 // first API fetch function
 function wholsomeMemeanator() {
-    var api_urlWhole = 'https://meme-api.herokuapp.com/gimme/wholesomememes/50'
+    var api_urlWhole = 'https://meme-api.herokuapp.com/gimme/wholesomememes/24'
     
     fetch(api_urlWhole).then(
         response => response.json()).then(data => {
@@ -30,7 +30,7 @@ function wholsomeMemeanator() {
     }
 
 function memeDankanator() {
-    var api_urlDank = 'https://meme-api.herokuapp.com/gimme/dankmemes/50'
+    var api_urlDank = 'https://meme-api.herokuapp.com/gimme/dankmemes/24'
     
     fetch(api_urlDank).then(
         response => response.json()).then(data => {
@@ -45,7 +45,7 @@ function memeDankanator() {
     }
 
 function allMemeanator() {
-    var api_url = 'https://meme-api.herokuapp.com/gimme/50'
+    var api_url = 'https://meme-api.herokuapp.com/gimme/24'
     
     fetch(api_url).then(
         response => response.json()).then(data => {
@@ -83,7 +83,7 @@ function AlladdClassList() {
 
 
 function copyWebsiteLinkToClipBoard(event) {
-    var copyLink = www.test.com;
+    var copyLink = "https://keatonflake.github.io/meme-machine/";
     copyLink.select();
     copyLink.setSelectionRange(0, 99999); /* For mobile devices */
   
