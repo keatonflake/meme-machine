@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: rgb(79, 111, 180);
+    background: linear-gradient(90deg, rgba(234,233,255,1) 0%, rgba(137,196,244,1) 35%, rgba(194,245,255,1) 100%);
 }
 
 header {
@@ -78,3 +78,45 @@ img {
 .hide {
     display: none;
 }
+
+
+/* mobile friendly */
+
+
+@media screen and (max-width: 767px) {
+    * {
+        width: 100%;
+        background-size: cover;
+        position: relative;
+    }
+
+    .memeFilter {
+        font-size: 14px;
+    }
+
+    .memesContainer {
+        max-width: 60%;
+        margin: auto;
+    }
+    
+    .theFooter {
+        width: 100%;
+    }
+
+    .footerText {
+        font-size: 17px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+      
+    * {
+        position: relative;
+    }
+
+    .footerText {
+        font-size: 30px;
+    }
+
+  }
