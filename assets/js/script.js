@@ -13,6 +13,22 @@ const allMemesEL = document.querySelector (".allMemes")
 
 const copyLinkEl = document.getElementById('#copyWebsightLink')
 
+// Get the modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+
+// on page load show modal
+onload = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 // first API fetch function
 function wholsomeMemeanator() {
     var api_urlWhole = 'https://meme-api.herokuapp.com/gimme/wholesomememes/24'
